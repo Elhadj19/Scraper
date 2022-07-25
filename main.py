@@ -49,7 +49,7 @@ def download_dataset(date_1=DATE_1, date=DATE, name_file=FILE):
     }
     response = requests.request("GET", url, headers=headers)
     url = "http://api.xxx.com/preview/statistics/report"
-    payload = "{'dimensions':['AdvertiserId','Advertiser','Day','AdsetId','Adset'],'metrics':['Visits','Clicks','Displays','Advertisercost'],'format':'Json','currency':'EUR','startDate':'" + date_1 + "','endDate':'" + date + "'}"
+    payload = "{'dimensions':[],'metrics':[],'format':'Json','currency':'','startDate':'" + date_1 + "','endDate':'" + date + "'}"
     headers = {
         "Authorization": Authorization,
         "Accept": "text/plain",
